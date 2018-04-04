@@ -1,0 +1,63 @@
+Windows Registry Editor Version 5.00
+
+;Office 2010: Disable Protected View:
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\office\14.0\word\security\protectedview]
+"DisableIntranetCheck"=dword:00000001
+"DisableUnsafeLocationsInPV"=dword:00000001
+"DisableInternetFilesInPV"=dword:00000001
+"DisableAttachmentsInPV"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\office\14.0\excel\security\protectedview]
+"DisableIntranetCheck"=dword:00000001
+"DisableUnsafeLocationsInPV"=dword:00000001
+"DisableInternetFilesInPV"=dword:00000001
+"DisableAttachmentsInPV"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\office\14.0\access\security\protectedview]
+"DisableIntranetCheck"=dword:00000001
+"DisableUnsafeLocationsInPV"=dword:00000001
+"DisableInternetFilesInPV"=dword:00000001
+"DisableAttachmentsInPV"=dword:00000001
+
+; Office 2010: Disable security warning: Macro’s are disabled. Enable content
+[HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security]
+"VBAWarnings"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Word\Security]
+"VBAWarnings"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\PowerPoint\Security]
+"VBAWarnings"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Access\Security]
+"VBAWarnings"=dword:00000001
+
+; Office 2010: Run Office files directly from the internet
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\AttachmentExecute\{0002DF01-0000-0000-C000-000000000046}]
+"AcroPDF.PDF"=hex
+"Word.Document.8"=hex:
+"Word.Document.12"=hex
+"Excel.Sheet.8"=hex
+"Excel.Sheet.12"=hex
+"AcroExch.Document.11"=hex
+
+; Office 2010: Disable Clip Art and Media downloads from the client and from Office.com
+[HKEY_CURRENT_USER\software\policies\microsoft\office\14.0\common\internet]
+"DisableClipArtAndMediaDownload"=dword:00000001
+
+; Office 2010:  Disable template downloads from the client and from Office.com
+[HKEY_CURRENT_USER\software\policies\microsoft\office\14.0\common\internet]
+"DisableTemplateDownload"=dword:00000001
+
+; Office 2010: Disable access to updates, add-ins, and patches on Office.com
+[HKEY_CURRENT_USER\software\policies\microsoft\office\14.0\common\internet]
+"DisableDownloadCenterAccess"=dword:00000001
+
+; Office 2010: Prevents users from uploading document templates to the Office.com Community.
+[HKEY_CURRENT_USER\software\policies\microsoft\office\14.0\common\internet]
+"DisableCustomerSubmittedUpload"=dword:00000001
+
+; Office 2010: Disable training practice downloads from Office.com
+[HKEY_CURRENT_USER\software\policies\microsoft\office\14.0\common\internet]
+"DisableTrainingPracticeDownload"=dword:00000001
+
+; Office 2010: Disable customer-submitted templates downloads from Office.com
+[HKEY_CURRENT_USER\software\policies\microsoft\office\14.0\common\internet]
+"DisableCustomerSubmittedDownload"=dword:00000001

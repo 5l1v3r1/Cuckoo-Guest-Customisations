@@ -1,0 +1,69 @@
+Windows Registry Editor Version 5.00
+
+; Win7: Disable: Balloon Notifications
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"EnableBalloonTips"=dword:00000000
+
+; Win7: Disable: Internet Connectivity Detection (NCIS)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NlaSvc\Parameters\Internet]
+"EnableActiveProbing"=dword:00000000
+
+; Win7: Disable: Network Location Wizard
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Network\NewNetworkWindowOff]
+
+; Win7: Disable: Smart Screen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableSmartScreen"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"SmartScreenEnabled"="Off"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\PhishingFilter]
+"EnabledV9"=dword:00000000
+
+; Win7: Disable: System Restore
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
+"DisableSR"=dword:00000001
+
+; Win7: Set IE Homepage
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Start Page"="about:blank"
+
+; Win7: Disable: IE8 Welcome Screen
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"IE8RunOnceLastShown"=dword:00000001
+"IE8RunOncePerInstallCompleted"=dword:00000001
+"IE8RunOnceCompletionTime"=hex:
+"IE8TourShown"=dword:00000001
+"IE8TourShownTime"=hex:
+"IE8RunOnceLastShown_TIMESTAMP"=hex:
+
+; Win7: Disable: Upgrade to Win10 Icon
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Gwx]
+"DisableGwx"=dword:00000001
+
+; Win7: Disable: Downloading Win10 upgrade
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"DisableOSUpgrade"=dword:00000001
+
+; Win7: Disable: Windows Update
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update]
+"AUOptions"=dword:00000001
+
+; Win7: Disable: Windows Firewall
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile]
+"EnableFirewall"=dword:00000000
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile]
+"EnableFirewall"=dword:00000000
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile]
+"EnableFirewall"=dword:00000000
+
+; Win7: Disable: Windows Defender
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001
+
+; Win7: Disable the Windows Customer Experience Improvement Program
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+
+; Disable Problem Reporting: "Never check for solutions (not recommended)"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
