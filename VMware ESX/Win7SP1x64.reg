@@ -1,0 +1,36 @@
+Windows Registry Editor Version 5.00
+
+;
+; Settings to be applied post bootup
+;
+
+
+[HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\BIOS]
+"BiosMajorRelease"=dword:00000004
+"BiosMinorRelease"=dword:00000006
+"ECFirmwareMajorRelease"=dword:000000ff
+"ECFirmwareMinorRelease"=dword:000000ff
+"BaseBoardManufacturer"="Intel Corporation"
+"BaseBoardProduct"="ASUSTeK COMPUTER INC."
+"BaseBoardVersion"="MAXIMUS V GENE"
+"BIOSReleaseDate"="11/09/2012"
+"BIOSVendor"="American Megatrends Inc."
+"BIOSVersion"="1408"
+"SystemFamily"="To be filled by O.E.M"
+"SystemManufacturer"="System Manufacturer"
+"SystemProductName"="System Product Name"
+"SystemSKU"="SKU"
+"SystemVersion"="System Version"
+
+[HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\Scsi\Scsi Port 2\Scsi Bus 0\Target Id 0\Logical Unit Id 0]
+"InquiryData"=hex:00,00,02,02,1f,00,00,73,56,4d,77,61,72,65,20,20,56,69,72,74,\
+  75,61,6c,20,64,69,73,6b,20,20,20,20,31,2e,30,20
+"Identifier"="Sandisk"
+"DeviceType"="DiskPeripheral"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SystemInformation]
+"BIOSVersion"="1408"
+"BIOSReleaseDate"="11/09/2012"
+"SystemManufacturer"="System Manufacturer"
+"SystemProductName"="System Product Name"
+"InformationSource"=dword:00000001
